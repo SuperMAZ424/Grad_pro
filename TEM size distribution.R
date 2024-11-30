@@ -28,21 +28,3 @@ tem_plot + theme(axis.ticks.x.bottom = element_line(), #addticks to the bottom
               panel.grid = element_line(color = "grey", linetype = 2)) #set gridlines color to grey and the line type to dashed
 
 ggsave(filename = "tem_size_dist.tiff", width = 16, height = 9, device='tiff', dpi=600, compression = "lzw")
-
-
-
-
-
-
-# tiff("AgNP_TEM.tiff", units="in", width=12, height=8, res=300, bg='transparent')
-# barplot(agtem,width = 0.5,main = 'AgNP ', space = 0.1, col = 'red',  ylab = 'Frequency (%)'
-#         ,xlab = 'Size (nm)', axes = TRUE, names.arg = sizeag,
-#         ylim = c(0,60), font.main = 6, cex.main = 2.8, font.axis = 6 ,cex.axis = 1.7,
-#         cex.lab = 1.5, font.lab = 6, cex.names = 1.7)
-# #dev.off()
-# #tiff("CuNP_TEM.tiff", units="in", width=12, height=8, res=300, bg='transparent')
-# barplot(cutem,width = 0.5,,main = 'CuNP ', space = 0.1, col = 'red',  ylab = 'Frequency (%)'
-#         ,xlab = 'Size (nm)', axes = TRUE, names.arg = sizecu,
-#         ylim = c(0,40), font.main = 6, cex.main = 2.8, font.axis = 6 ,cex.axis = 1.7,
-#         cex.lab = 1.5, font.lab = 6, cex.names = 1.7)
-#dev.off()
